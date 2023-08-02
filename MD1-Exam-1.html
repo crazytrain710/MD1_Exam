@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findAvg(scores) {
+        if (scores.length === 0) {
+            return 0;
+        }
+
+        let sum = 0;
+        for (let i = 0; i < scores.length; i++) {
+            sum += scores[i];
+        }
+
+        let average = sum / scores.length;
+        return average;
+    }
+
+
+    let testScores = [4,6,7,8,5,9];
+    let averageScore = findAvg(testScores);
+    alert(averageScore);
+</script>
+</body>
+</html>
